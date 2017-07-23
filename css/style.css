@@ -58,7 +58,7 @@ canvas{
 
 #overlay{height:100%;position:absolute;top:0;right:0;left:0;background:transparent;font-family:'Lato';text-align:center;}
 
-#intro-wrap{position:relative; top:150px;}
+#intro-wrap{position:relative; top:10em;}
 #intro-wrap h1{
   font-size:8em;
   font-family: "Lato";
@@ -121,8 +121,9 @@ h1 span:nth-child(n){ forwards ease-out alternate}
   100%{  opacity:1; }
 }
 @media only screen and (max-width:700px){
+  #intro-wrap{top:8em;}
   #intro-wrap h1{font-size:5em;letter-spacing:0.2em;}
-  #btns{bottom:3em;}
+  #btns{bottom:2em;}
   #btns ul li{font-size:1.7em;padding-bottom:27px}
   .btn-space{padding-left:10px;}
 @keyframes fall {

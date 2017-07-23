@@ -35,150 +35,71 @@
 #clg span:nth-child(8) {
   animation-duration: 1.8s; }
 
-button {
-  width: 9em;
-  height: 4em;
-  background: none;
-  border: 0;
-  box-sizing: border-box;
-  margin: 1em;
-  padding: 1em 2em;
-  outline: none;
-  box-shadow: 0 0 2px white;
-  color: white;
-  font-size: inherit;
-  font-weight: 700;
-  position: relative;
-  vertical-align: middle; }
-  button::before, button::after {
-    box-sizing: inherit;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%; }
-
-.draw {
-  transition: color 0.25s; }
-  .draw::before, .draw::after {
-    border: 2px solid transparent;
-    width: 0;
-    height: 0; }
-  .draw::before {
-    top: 0;
-    left: 0; }
-  .draw::after {
-    bottom: 0;
-    right: 0; }
-  .draw:hover {
-    color: white;
-    background: rgba(0, 0, 0, 0.5); }
-  .draw:hover::before, .draw:hover::after {
-    width: 100%;
-    height: 100%; }
-  .draw:hover::before {
-    border-top-color: white;
-    border-right-color: #60daaa;
-    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
-  .draw:hover::after {
-    border-bottom-color: #60daaa;
-    border-left-color: white;
-    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
-
-/* THE SVG HOVER EFFECTS */
-.svg .button {
-  box-shadow: 4px 4px 10px black;
+.box {
   font-family: Vampiro One;
-  text-decoration: none;
-  color: #fff;
   position: relative;
-  display: inline-block;
-  width: 200px;
-  height: 100px;
-  overflow: hidden; }
-
-.svg .button:nth-child(3) {
-  overflow: visible;
-  position: relative;
-  top: -20px; }
-
-.svg .button rect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  stroke-width: 4px;
-  stroke-dashoffset: 400px;
-  stroke: grey; }
-
-.svg .button:hover {
-  box-shadow: 7px 7px 15px black; }
-
-.svg .button span {
+  vertical-align: middle;
   color: white;
-  width: 200px;
-  height: 100px;
   display: inline-block;
+  height: 60px;
+  line-height: 60px;
   text-align: center;
+  transition: 0.5s;
+  padding: 10px 40px 10px 40px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-transition: 0.5s;
+  box-shadow: 3px 3px 14px black; }
+
+.box:hover {
+  color: #54fffb; }
+
+.box::before, .box::after {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  content: '';
   position: absolute;
-  left: 0;
   top: 0;
-  line-height: 40px;
-  padding-top: 20px;
-  transition: all .2s linear; }
+  left: 0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.9s; }
 
-.svg .button span:hover {
-  color: teal;
-  background: white;
-  transition: all 1s cubic-bezier(1.25s 0, 1.15, 1, 1);
-  transition-delay: .5s; }
+.bar::before {
+  border-bottom: 2px solid #DDD;
+  border-left: 2px solid #DDD;
+  -webkit-transform-origin: 100% 0%; }
 
-.svg .button:nth-child(1):hover rect {
-  animation: draw1 .75s linear forwards; }
+.bar::after {
+  border-top: 2px solid #DDD;
+  border-right: 2px solid #DDD;
+  -webkit-transform-origin: 0% 100%; }
 
-.svg .button:nth-child(2):hover rect {
-  animation: draw2 .75s linear forwards; }
+.box:hover::after, .box:hover::before {
+  -webkit-transform: scale(1); }
 
-.svg .button:nth-child(3) span {
-  border: 3px solid olivedrab;
-  transform: scale(1);
-  width: 125px;
-  height: 35px;
-  line-height: 37px; }
-
-.svg .button:nth-child(3):hover span {
-  animation: draw3 .75s linear forwards; }
-
-@keyframes draw1 {
+@keyframes fadeInOut {
   0% {
-    stroke-dasharray: 300;
-    stroke-dashoffset: 700;
-    stroke-width: 4px; }
-  75% {
-    stroke-dasharray: 900;
-    stroke-width: 1px; }
+    opacity: 0;
+    font-size: 5px; }
+  /*20% {
+  	opacity: .2;
+  	font-size: 5px;
+  }
+
+  50%{
+  	opacity: .5;
+  }
+
+  70% {
+    opacity: .7;
+  }*/
   100% {
-    stroke-dasharray: 900;
-    stroke-width: 1px; } }
-@keyframes draw2 {
-  0% {
-    stroke-dashoffset: 350;
-    stroke-dasharray: 350; }
-  50% {
-    stroke-dashoffset: 600;
-    stroke-dasharray: 400;
-    stroke-width: 1px; }
-  100% {
-    stroke-dashoffset: 900;
-    stroke-dasharray: 400;
-    stroke-width: 1px; } }
-@keyframes draw3 {
-  100% {
-    transform: scale(1.35); } }
+    opacity: 1; } }
 @media only screen and (max-width: 700px) {
-  .svg .button, .svg .button span {
-    height: 60px;
-    width: 140px; }
-
-  .svg .button span {
-    padding-top: 10px; } }
+  .box {
+    padding: 5px 20px 5px 20px; } }
 
 /*# sourceMappingURL=style.css.map */
