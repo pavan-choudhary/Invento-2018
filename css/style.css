@@ -124,7 +124,7 @@ h1 span:nth-child(n){ forwards ease-out alternate}
   #intro-wrap{top:8em;}
   #intro-wrap h1{font-size:5em;letter-spacing:0.2em;}
   #btns{bottom:2em;}
-  #btns ul li{font-size:1.7em;padding-bottom:27px}
+  #btns ul li{font-size:1.7em;}
   .btn-space{padding-left:10px;}
 @keyframes fall {
   0% {
