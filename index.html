@@ -5,7 +5,7 @@
   <title>Invento</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" media="screen" href="css/style.css">
   <link rel="stylesheet" media="screen" href="lib/sass/style.css">
 </head>
@@ -13,7 +13,6 @@
 
 <!-- particles.js container -->
 <div id="particles-js">
-</div>
 
   <div id="overlay">
     <center>
@@ -24,20 +23,31 @@
     </div>
     </center>
 
-    <div id="btns"><center>
+    <div id="btns" class="svg"><center>
       <ul>
-      <li >
-         <button class="draw">ABOUT</button>
-      </li>
-      <li>
-         <button class="draw">SPONSOR US</button>
-      </li>
-      <li>
-         <button class="draw">CONTACT US</button>
-      </li>
+        <li><a class="button" href="#">
+             <svg>
+              <rect height="100" width="200" fill="transparent" />
+             </svg>
+             <span>ABOUT US</span> </a></li>
+        <li class="btn-space"></li>
+        <li><a class="button" href="#">
+             <svg>
+              <rect height="100" width="200" fill="transparent" />
+             </svg>
+             <span>SPONSOR US</span> </a></li>
+             <li class="btn-space"></li>
+        <li><a class="button" href="#">
+             <svg>
+              <rect height="100" width="200" fill="transparent" />
+             </svg>
+             <span>CONTACT US</span> </a></li>
       </ul></center>
     </div>
   </div>
+
+</div>
+
 
 <!-- scripts -->
 <script src="particles.js"></script>
@@ -47,9 +57,7 @@
   margin:0;
   text-align: center;  color: #fff;
   overflow: hidden;}
-#overlay{height:100%;}
-#btns{ position:absolute;bottom:10em;width:100%;}
-#btns ul li{display: inline-block;margin-right:5em;font-size:2em;text-align: center;}
+
 </style>
 <script>
 var clg=new String("IET-DAVV");
