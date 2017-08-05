@@ -3,50 +3,54 @@
 <head>
   <meta charset="utf-8">
   <title>Invento</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Vampiro+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" media="screen" href="css/style.css">
-  <link rel="stylesheet" media="screen" href="lib/sass/style.css">
+  <link rel="stylesheet" media="screen" href="css/sass/style.css">
 </head>
 <body>
-
 <!-- particles.js container -->
-<div id="particles-js">
+<div id="particles-js"></div>
 
   <div id="overlay">
     <center>
-    <div id="intro-wrap">
-    <h2 id="clg"> </h2>
-      <h1><span>I</span><span>N</span><span>V</span><span>E</span><span>N</span><span>T</span><span>O</span></h1>
-      <h2 id="date"><span>17 - 18</span> <span>&nbsp;SEPTEMBER</span><span>&nbsp; 2017</span></h2>
-    </div>
+      <div id="circle1"></div>
+      <div id="circle2"></div>
+    
+      <div id="circle31"></div>
+        <div id="intro-wrap">
+          <h2 id="clg"></h2>
+          <h1 class="invento"><span>I</span><span>N</span><span>V</span><span>E</span><span>N</span><span>T</span><span>O</span></h1>
+          <h2 id="date"><span>17 - 18</span> <span>&nbsp;SEPTEMBER</span><span>&nbsp; 2017</span></h2>
+        </div>
     </center>
-
     <div id="btns"><center>
       <ul>
-        <li>
-        <div class="box bar" href="#">ABOUT US </div></li>
+        <li id="btn-left">
+        <a class="button main-btn btn-top" href="#"><div>ABOUT US</div></a></li>
         <li class="btn-space"></li>
-        <li><a class="button box bar" href="#">CAMPUS AMBASSDOR</a></li>
+        <li id="btn-mid"><a class="button main-btn" href="#"><div>CAMPUS AMBASSDOR</div></a></li>
              <li class="btn-space"></li>
-        <li><a class="button box bar" href="#">CONTACT US</a></li>
+        <li id="btn-right"><a class="button main-btn btn-top" href="#"><div>CONTACT US</div></a></li>
       </ul></center>
     </div>
   </div>
 
-</div>
-
-
 <!-- scripts -->
-<script src="particles.js"></script>
+<script src="js/particles.min.js"></script>
 <script src="js/app.js"></script>
 <style type="text/css">
-  body {
+@font-face {
+    font-family:titlefont;
+    src: url(fonts/DeathHector.otf) format('truetype');
+}
+body {
   margin:0;
   text-align: center;  color: #fff;
   overflow: hidden;}
-
+#intro-wrap h1{
+   font-family: titlefont; font-weight: 100; letter-spacing:5px;}
 </style>
 <script>
 var clg=new String("IET-DAVV");
