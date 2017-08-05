@@ -138,15 +138,15 @@ canvas{  display:block;  vertical-align:bottom;}
 #btns{perspective:200px;}
 .main-btn div{position:absolute;top:0px;z-index:10;}
 #btns #btn-left{transform:skewX(-60deg);}
-#btn-left .main-btn{ width:100px;height: 20px; }
+#btn-left .main-btn{ width:100px;height: 20px; box-shadow:2px 2px 0px #7cf4ff;}
 #btn-left .main-btn div{transform:skewX(60deg); left:15px;}
 
 #btns #btn-right{transform:skewX(60deg);}
-#btn-right .main-btn{ width:130px;height: 20px; }
+#btn-right .main-btn{ width:130px;height: 20px;box-shadow:-2px 2px 0px #7cf4ff; }
 #btn-right .main-btn div{transform:skewX(-60deg);}
 
 #btns #btn-mid{transform:rotateX(60deg);}
-#btn-mid .main-btn{ width:250px;perspective:200px;height: 30px;}
+#btn-mid .main-btn{ width:250px;perspective:200px;height: 30px;box-shadow:2px 2px 0px #7cf4ff;}
 #btn-mid div{transform:rotateX(-30deg) scaleY(3) scaleX(1.2) skewX(15deg);}
 
 .main-btn {
@@ -161,7 +161,7 @@ canvas{  display:block;  vertical-align:bottom;}
   padding: 10px 30px 10px 30px;
   margin-bottom: 5px;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255,255,255, 0.1);
   -webkit-transition: 0.5s;z-index:1;
 }
 
