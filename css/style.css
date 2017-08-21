@@ -32,9 +32,7 @@ canvas{  display:block;  vertical-align:bottom;}
   animation: changeColor 16s infinite alternate;
 }
 @keyframes changeColor {
-  0% {background:
-#0862d6
-;background-image:linear-gradient(to top,rgba(5,5,5,0.8),rgba(0,0,0,0));}
+  0% {background:#0862d6;background-image:linear-gradient(to top,rgba(5,5,5,0.8),rgba(0,0,0,0));}
   50% {background:#009696;background-image:linear-gradient(to top,rgba(5,5,5,.8),rgba(0,0,0,0));}
   100% {background:#03559e;background-image:linear-gradient(to top,rgba(5,5,5,.8),rgba(0,0,0,0));}
 }
@@ -102,6 +100,7 @@ canvas{  display:block;  vertical-align:bottom;}
     transform: rotate(-450deg);
     }
 }
+
 nav{z-index:10;}
 .menu-left{position:absolute; right:64%; top:9em; transform:skewX(30deg);}
 .menu-left ul li{ background:white;margin:20px 0px 20px 20px;
@@ -110,6 +109,12 @@ nav{z-index:10;}
 .menu-left ul li:nth-child(1){margin-left:130px; }
 .menu-left ul li:nth-child(3){margin-left:80px; }
 .menu-left ul li button{width:100%;transform:skewX(-30deg);background:none;border:none;padding:0;color:black;font-family:'Aldrich';font-weight:bold;}
+
+#home{width:90px;position:absolute;left:46%;top:0;
+    background:white;
+    padding:0.5px;padding-bottom:1px;padding-top:5px; 
+    border-top:3px solid red;}
+#home button{background:none;border:none;padding:0;color:black;font-family:'Aldrich';font-weight:bold;}
 
 .menu-right{position:absolute; left:65%; top:9em;transform:skewX(-30deg);}
 .menu-right ul li{background:white;margin:20px 0px 20px 20px;
@@ -123,7 +128,7 @@ nav{z-index:10;}
 /* -------------------menu transition------------------------ */
 .menul{position:absolute;right:54%;top:0;animation:menutrans .5s ease-in;width:40%;}
 .menur{position:absolute;left:54%;top:0;animation:menutrans .5s ease-in;width:40%;}
-.menul ul li,.menur ul li{display:inline-block; animation:none;margin:0;padding-top:4px;padding-bottom`:4px;}
+.menul ul li,.menur ul li{display:inline-block; animation:none;margin:0;padding-top:4px;padding-bottom:4px;}
 .menur ul li:nth-child(2),.menul ul li:nth-child(n){margin-left:0px;}
 @keyframes menutrans{
     0%{ top:9em; }
@@ -158,20 +163,34 @@ nav{z-index:10;}
 .btn-space{padding-left:10%;}
 
 .btn-top{margin-top:-5em;}
-#btns{perspective:300px;position:absolute;bottom:5em;width:100%;}
+#btns{-webkit-perspective:300px; /* Chrome, Safari, Opera */
+    perspective:300px;position:absolute;bottom:5em;width:100%;}
 #btns ul li{display: inline-block;font-size:1.5em;text-align: center;}
 
-#btns #about-btn{transform:skewX(-60deg);}
+#btns #about-btn{-webkit-transform:skewX(-60deg);
+    transform:skewX(-60deg);}
 #about-btn .main-btn{ width:150px;height: 30px; box-shadow:2px 2px 0px #7cf4ff;}
-#about-btn .main-btn div{transform:skewX(60deg); left:15px;}
+#about-btn .main-btn div{-webkit-transform:skewX(60deg);
+                        transform:skewX(60deg); left:15px;}
 
-#btns #contact-btn{transform:skewX(60deg);}
+#btns #contact-btn{-webkit-transform:skewX(60deg);
+                    transform:skewX(60deg);}
 #contact-btn .main-btn{ width:190px;height: 30px;box-shadow:-2px 2px 0px #7cf4ff; }
-#contact-btn .main-btn div{transform:skewX(-60deg);}
+#contact-btn .main-btn div{-webkit-transform:skewX(-60deg);
+                            transform:skewX(-60deg);}
 
-#btns #campus-btn{transform:rotateX(60deg);}
-#campus-btn .main-btn{ width:350px;perspective:200px;height:40px;box-shadow:2px 2px 0px #7cf4ff;}
-#campus-btn div{transform:rotateX(-30deg) scaleY(2.6) scaleX(1.2) skewX(5deg); left:50px;}
+#btns #campus-btn{-webkit-transform:rotateX(60deg);
+                 transform:rotateX(60deg);}
+#campus-btn .main-btn{ width:350px;
+                    -webkit-perspective:200px; /* Chrome, Safari, Opera */
+                    perspective:200px;height:40px;box-shadow:2px 2px 0px #7cf4ff;}
+#campus-btn div{-webkit-transform:rotateX(-30deg) scaleY(2.6) scaleX(1.2) skewX(5deg);
+                transform:rotateX(-30deg) scaleY(2.6) scaleX(1.2) skewX(5deg); left:50px;
+                 left:50px;}
+@-moz-document url-prefix() {
+    #campus-btn .main-btn{ width:320px;}
+    #campus-btn div{transform:rotateX(0deg) scaleY(2.2) scaleX(1) skewX(0deg);left:30px;letter-spacing: 1px;}
+}
 
 .main-btn div{position:absolute;top:0px;}
 .main-btn {
