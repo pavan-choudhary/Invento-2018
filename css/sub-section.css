@@ -136,6 +136,21 @@
 		padding-right:3px;
 		height : 98%;
 	}
+.body::before {
+	border-top:2px solid #009696;
+	border-bottom:2px solid black;
+    width: 100px;
+    left: calc(50% - 50px);
+    height: calc(100% - 66px);
+    top:5px;
+}
+.body::after {
+	border-left:2px solid #009696;border-right:2px solid #009696;
+    height: 100px;
+    left: 5px;
+    width: calc(100% - 5px);
+    top: calc(50% - 50px);
+}
 	.content{
 		padding-right: 10px;
 	}

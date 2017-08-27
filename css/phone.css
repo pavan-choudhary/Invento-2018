@@ -53,6 +53,7 @@ body{overflow:hidden;}
 .menu-right ul li:nth-child(2){margin-left:-10px;}
 .menu-right ul li:nth-child(3){margin-left:0px;}
 .menu-right ul li button{  transform:skewX(0deg); }
+#home{left:50%; right:0;top:60px;width:48%;}
 
 nav{z-index:100; }
 /* -------------------menu transition------------------------ */

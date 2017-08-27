@@ -85,15 +85,25 @@
 				
 			</div><!-- body // -->      
 		</div><!-- pop-up // -->
-
-<div id="wait"><img src="loader.gif"></div>
+<div style="background:rgba(0,0,0,0.5);position:absolute;top:0;left:0;">
+<div id="wait" style="position:absolute;left:32%; top:50px;">
+	<div id="circle1"></div>
+	<div id="circle2"></div>    
+	<div id="circle31"></div>
+	<center><div class="invento" style="width:100%;margin-left:65%;margin-top:80%;font-family:titlefont"><h1>INVENTO</h1></div></center>
+</div>
+</div>
 		<script src="js/particles.min.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/ietdavv-effect.js"></script>
 		<script src="js/sub-section.js"></script>
 
 		<style>
-			.item {    cursor: zoom-in;  }
+			.item { cursor: zoom-in;  }
 		</style>
+		<script type="text/javascript">
+			var w=$(window).width();
+			$('body').css('width',w);
+		</script>
 	</body>
 </html>
