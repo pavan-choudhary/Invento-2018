@@ -1,5 +1,5 @@
 /* css file for every sub section */
-#wait{position:absolute;left:40%;top:50%;display:none;}
+#wait{position:absolute;left:40%;top:50%;}
 .pop-up{
 	height:100%;position:absolute;top:0;right:0;left:0;text-align:center;
 }
