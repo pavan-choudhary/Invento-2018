@@ -1,5 +1,9 @@
 @media only screen and (max-width: 700px) {
 body{overflow:hidden;}
+#wait-circle{position:absolute;left:23%; top:100px;}
+#wait-title{width:100%;margin-left:8%;margin-top:70%;}
+#wait-title h1{font-size:2em;}
+
 #overlay{height:100%;position:absolute;top:0;right:0;left:0;background:rgba(0,0,0,0);text-align:center;}
 [id^="circle"]{
   position:absolute; top:1em; left:calc(50% - 130px);

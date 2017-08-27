@@ -37,7 +37,8 @@ canvas{  display:block;  vertical-align:bottom;}
   100% {background:#03559e;background-image:linear-gradient(to top,rgba(5,5,5,.8),rgba(0,0,0,0));}
 }
 
-
+#wait-circle{position:absolute;left:33%; top:50px;}
+#wait-title{width:100%;margin-left:65%;margin-top:76%;}
 #overlay{height:100%;position:absolute;top:0;right:0;left:0;text-align:center;z-index:0;}
 [id^="circle"]{
   position:absolute;left:36%; top:2em;z-index:1;
