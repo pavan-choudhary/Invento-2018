@@ -1,15 +1,16 @@
 <link rel="stylesheet" media="screen" href="css/social.css">
-				<div class="header" style="padding:0">
-					<span class="title">TEAM</span>
+				<div class="header" style="padding:0;">
+					<span class="title">Designed By</span>
+					<br>
 					<button onclick="closepop()" class="close-btn">
 						<img src="images/close_btn_image.png" alt="X"/>
 					</button>
 				</div>
 				<div class="content" style="overflow-x:hidden;">
-				<h3 style="margin-top:-10px">The Web Warriors</h3>
 						<div class="row">
 							<div class="col-md-4 col-sm-6 align-center contact">
-								<img src="images/team/pavan.jpg" alt="Image" class="img img-responsive" />
+								<h4>Designed By;</h4>
+								<img src="images/team/pavan.jpg" alt="Pavan choudhary" class="img img-responsive" />
 								<p class="name">< Pavan Choudhary /></p>
 								<div class="social-links col-md-12"">
 									<ul class="social-network social-circle">
@@ -19,8 +20,10 @@
 									</ul>				
 								</div>
 							</div>
+							<hr id="sep">
 							<div class="col-md-4 col-sm-6 align-center contact">
-								<img src="images/team/mohit.jpeg" alt="Image" class="img img-responsive" />
+								<h4>Contributed By; </h4> 
+								<img src="images/team/mohit.jpeg" alt="Mohit " class="img img-responsive" id="mohit" >
 								<p class="name">< Mohit Khandelwal /></p>
 								<div class="social-links col-md-12">
 									<ul class="social-network social-circle">
@@ -30,61 +33,41 @@
 									</ul>				
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-12 align-center contact">
-								<img src="images/team/ayushi.jpeg" alt="Image" class="img img-responsive"/>
-								<p class="name">< Ayushi Ghatt /></p>
-								<div class="social-links col-md-12">
-									<ul class="social-network social-circle">
-										<li><a href="https://www.facebook.com/ayushi.ghatt" class="icoFacebook" title="Facebook" target="blank"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="https://www.linkedin.com/in/ayushi-ghatt-10883312b" class="icoLinkedin" title="Linkedin" target="blank"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="http://github.com/ayushighatt" class="icoGithub" title="Github" target="blank"><i class="fa fa-github"></i></a></li>
-									</ul>				
-								</div>
-							</div>
-						</div>
-						<h3>Geek of Geeks</h3>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 align-center contact">
-								<img src="images/team/mayank.jpg" alt="Image" class="img img-responsive" />
-								<p class="name">Mayank Jain</p>
-								<div class="social-links col-md-12">
-									<ul class="social-network social-circle">
-										<li><a href="https://www.facebook.com/mayank.jain.5030" class="icoFacebook" title="Facebook" target="blank"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#" class="icoLinkedin" title="Linkedin" target="blank"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#" class="icoGithub" title="Github" target="blank"><i class="fa fa-github"></i></a></li>
-									</ul>				
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 align-center contact">
-								<img src="images/team/kalpit.jpg" alt="Image" class="img img-responsive" />
-								<p class="name">Kalpit Tiwari</p>
-								<div class="social-links col-md-12">
-									<ul class="social-network social-circle">
-										<li><a href="#" class="icoFacebook" title="Facebook" target="blank"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#" class="icoLinkedin" title="Linkedin" target="blank"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#" class="icoGithub" title="Github" target="blank"><i class="fa fa-github"></i></a></li>
-									</ul>				
-								</div>
-							</div>
 						</div>
 <br><br><br><br>
 				</div><!-- content // -->
 
 <!-- styling -->
 <style>
+
+.title{ display:none; }
+.content{ margin-left:26%; }
 .align-center{
 	text-align: center;
 }
+#mohit{ width:100px; height:100px }
 .contact img{
 	width:120px;
 	height:120px;
 	border-radius: 50%;
 	margin:auto;
 }
-
 .name{
 	font-family:'Aldrich';
 	margin-top: 10px;
+}
+.contact{ margin-top:100px; }
+.social-circle li a{ height:34px; width:34px; font-size:20px;margin-top:0px }
+.social-circle li i { line-height:35px }
+#sep{display:none; }
+
+@media only screen and (max-width: 700px) {
+#sep{ margin-left:20%;margin-right:20%;margin-bottom:20px; height:1px; color:grey; display:block;}
+.content{ margin-left:0%; }
+.contact{ margin-top:0;  }
+.title{ display:block; }
+#mohit{ width:90px; height:90px }
+.close-btn{ margin-top:-40px }
 }
 </style>
 

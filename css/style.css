@@ -52,9 +52,7 @@ canvas{  display:block;  vertical-align:bottom;}
     #circle31::before,#circle31::after{position: absolute;content:''; }
     #circle31::before{border-top:2px solid #68fff4;border-bottom:2px solid #68fff4;border-radius:30em; width:calc(100%);
     height:calc(100% );
-    top:-1px;
-    left:50%;
-
+    top:-1px; left:50%;
     transform:translateX(-50%);
     z-index: 1; }
 
@@ -117,7 +115,7 @@ nav{z-index:10;}
     background:white;
     padding:0.5px;padding-bottom:1px;padding-top:5px; 
     border-top:3px solid red;}
-#home button{background:none;border:none;padding:0;color:black;font-family:'Aldrich';font-weight:bold;}
+#home a{background:none;border:none;padding:0;color:black;font-family:'Aldrich';font-weight:bold;}
 
 .menu-right{position:absolute; left:65%; top:9em;transform:skewX(-30deg);}
 .menu-right ul li{background:white;margin:20px 0px 20px 20px;
@@ -141,13 +139,13 @@ nav{z-index:10;}
 
 #navigation{visibility:hidden;z-index:100;}
 
+#intro-wrap{ position: absolute;left:40%;top:4.5em;font-family: "Lato";text-shadow: 0 2px 0.1em black; }
+#intro-wrap h1{font-size:2.1em; margin-top:6px; }
 
-#intro-wrap{ position: absolute;left:39%;top:7.5em; }
-#intro-wrap h1{font-size:2.3em;}
-
-#intro-wrap h2{font-family: "Lato";  text-shadow: 0 2px 0.1em black; }
-#clg span{font-size: 0.5em;display: inline-block;animation: falltop forwards ease-in-out alternate;
-          letter-spacing:4px;opacity:0;animation-delay:3s;}
+#logo img { width:90px; }
+#clg{ font-size:27px; }
+#clg span{display: inline-block;animation: falltop forwards ease-in-out alternate;
+          letter-spacing:4px;opacity:0;animation-delay:3s; }
 #date span{display: inline-block;animation: fall4 forwards ease-in-out alternate;animation-delay:3s;opacity:0;}
 #date{margin-top:.8em;font-size:1.3em;}
 @keyframes fall4 {

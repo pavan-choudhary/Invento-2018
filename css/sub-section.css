@@ -36,7 +36,8 @@
 .body > * {
     position: relative; z-index: 2; /* ensure any child elements sit above pseudos */
 }
-.content-box{border-radius:15px;padding:30px;font-size:1.3em; background:rgba(0,0,0,0.86);height:100%;width:99%;overflow-x:hidden;}
+.content-box{border-radius:15px;padding:10px;font-size:1.3em; background:rgba(0,0,0,0.86);
+	height:100%;width:100%;overflow-x:hidden;}
 .pop-up > .body:hover{
 	background: rgba(255,255,255,.12);				
 }
@@ -48,7 +49,7 @@
 }
 .header .title{
 	font-family: 'Aldrich';
-	font-size:1.2em;
+	font-size:20px;
 	text-transform: uppercase;
 	padding-left:19px;
 }
