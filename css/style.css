@@ -161,6 +161,12 @@ nav{z-index:10;}
   }
   100%{  opacity:1; }
 }
+/* sponsor section */
+      .sponsor{ display:inline-block; margin-right:5px; font-family:'Aldrich'}
+      .sponsor img{width:100px;}
+      .sponsor small{color:#eef1f6}
+      #pp{width:130px; }
+      #sponsorsec{ position:absolute; bottom:12em; text-align:center; }
 /* BTNS */
 .btn-space{padding-left:10%;}
 
